@@ -1,0 +1,14 @@
+<launch>
+  <!-- Launch the teleop_twist_keyboard node -->
+  <node pkg="teleop_twist_keyboard" type="teleop_twist_keyboard.py" name="teleop_twist_keyboard" output="screen">
+    <param name="speed" type="double" value="0.5" />
+    <param name="turn" type="double" value="1.0" />
+    <param name="speed_limit" type="double" value="1.0" />
+    <param name="turn_limit" type="double" value="1.0" />
+    <param name="repeat_rate" type="double" value="0.0" />
+    <param name="key_timeout" type="double" value="0.5" />
+    <param name="stamped" type="bool" value="false" />
+    <param name="frame_id" type="string" value="" />
+  </node>
+  
+</launch>
